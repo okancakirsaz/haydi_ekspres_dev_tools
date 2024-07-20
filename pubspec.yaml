@@ -13,7 +13,6 @@ dependencies:
 
   #State Management
   mobx: ^2.2.0
-  mobx_codegen: ^2.4.0
   flutter_mobx: ^2.1.0
 
   #Generating
