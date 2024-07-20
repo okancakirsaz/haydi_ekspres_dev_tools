@@ -57,4 +57,5 @@ final class Endpoints {
   //Chat
   final String createChatRoom = "/chat/create-room";
   final String updateChatRoom = "/chat/update-room";
+  final String closeChatRoom = "/chat/close-room";
 }
