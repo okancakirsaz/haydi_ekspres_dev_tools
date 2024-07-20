@@ -19,6 +19,7 @@ class PaddingConsts {
   final EdgeInsetsGeometry top30 = const EdgeInsets.only(top: 30);
   final EdgeInsetsGeometry top5 = const EdgeInsets.only(top: 5);
   final EdgeInsetsGeometry right10 = const EdgeInsets.only(right: 10);
+  final EdgeInsetsGeometry right20 = const EdgeInsets.only(right: 20);
   final EdgeInsetsGeometry right50 = const EdgeInsets.only(right: 50);
   final EdgeInsetsGeometry left50 = const EdgeInsets.only(left: 50);
   final EdgeInsetsGeometry left30 = const EdgeInsets.only(left: 30);

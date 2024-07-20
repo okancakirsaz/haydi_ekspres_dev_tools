@@ -441,6 +441,14 @@ class TextConsts {
     );
   }
 
+  TextStyle get regularDarkGrey16Bold {
+    return GoogleFonts.montserrat(
+      fontSize: 16,
+      color: const Color(0xFF979797),
+      fontWeight: FontWeight.bold,
+    );
+  }
+
   //Custom
   TextStyle regularBoldCustomColor18(Color color) {
     return GoogleFonts.montserrat(
