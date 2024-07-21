@@ -30,4 +30,14 @@ class AssetConsts {
       "packages/haydi_ekspres_dev_tools/lib/assets/icons/cancel.svg";
   final String customer =
       "packages/haydi_ekspres_dev_tools/lib/assets/icons/customer.svg";
+  final String advertisements =
+      "packages/haydi_ekspres_dev_tools/lib/assets/icons/advertisements.svg";
+  final String addAdvertisement =
+      "packages/haydi_ekspres_dev_tools/lib/assets/icons/add_advertisement.svg";
+  final String searchSuggestions =
+      "packages/haydi_ekspres_dev_tools/lib/assets/images/search_suggestions.png";
+  final String hf1 =
+      "packages/haydi_ekspres_dev_tools/lib/assets/images/haydi_firsatlar_1.png";
+  final String hf2 =
+      "packages/haydi_ekspres_dev_tools/lib/assets/images/haydi_firsatlar_2.png";
 }
