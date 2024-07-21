@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:haydi_ekspres_dev_tools/constants/color_consts.dart';
+import 'package:haydi_ekspres_dev_tools/constants/constants_index.dart';
 
 class TextConsts {
   static final TextConsts instance = TextConsts();
@@ -405,6 +406,16 @@ class TextConsts {
       fontSize: 14,
       color: ColorConsts.instance.third,
       fontWeight: FontWeight.bold,
+    );
+  }
+
+  TextStyle get regularThird14Underlined {
+    return GoogleFonts.montserrat(
+      fontSize: 14,
+      color: ColorConsts.instance.third,
+      fontWeight: FontWeight.normal,
+      decoration: TextDecoration.underline,
+      decorationColor: ColorConsts.instance.third,
     );
   }
 
