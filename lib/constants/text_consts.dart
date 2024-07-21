@@ -492,4 +492,12 @@ class TextConsts {
       fontWeight: FontWeight.normal,
     );
   }
+
+  TextStyle regularCustomColor11(Color color) {
+    return GoogleFonts.montserrat(
+      fontSize: 11,
+      color: color,
+      fontWeight: FontWeight.normal,
+    );
+  }
 }
