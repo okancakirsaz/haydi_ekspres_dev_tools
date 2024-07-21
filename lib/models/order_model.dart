@@ -12,6 +12,7 @@ class OrderModel {
   String customerName;
   String customerId;
   String restaurantId;
+  String restaurantName;
   String customerPhoneNumber;
   String? note;
   bool? isPaidSuccess;
@@ -29,6 +30,7 @@ class OrderModel {
     required this.customerName,
     required this.customerId,
     required this.restaurantId,
+    required this.restaurantName,
     required this.customerPhoneNumber,
     required this.note,
     this.courierId,
@@ -46,6 +48,7 @@ class OrderModel {
       'customerName': customerName,
       'customerId': customerId,
       'restaurantId': restaurantId,
+      'restaurantName': restaurantName,
       'customerPhoneNumber': customerPhoneNumber,
       'note': note,
       'isPaidSuccess': isPaidSuccess,
@@ -67,6 +70,7 @@ class OrderModel {
       customerName: json['customerName'] as String,
       customerId: json['customerId'] as String,
       restaurantId: json['restaurantId'] as String,
+      restaurantName: json['restaurantName'] as String,
       customerPhoneNumber: json['customerPhoneNumber'] as String,
       note: json['note'] as String?,
       isPaidSuccess: json['isPaidSuccess'] as bool?,
