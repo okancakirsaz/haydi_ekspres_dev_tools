@@ -55,7 +55,7 @@ final class Endpoints {
   final String change = "/customer/change";
 
   //Restaurant
-  final String getRestaurantName = "/restaurant/name";
+  final String getRestaurantName = "/restaurant/get-restaurant";
 
   //Chat
   final String createChatRoom = "/chat/create-room";
