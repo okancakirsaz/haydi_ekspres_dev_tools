@@ -409,21 +409,21 @@ class TextConsts {
     );
   }
 
-  TextStyle get regularThird14Underlined {
-    return GoogleFonts.montserrat(
-      fontSize: 14,
-      color: ColorConsts.instance.third,
-      fontWeight: FontWeight.normal,
-      decoration: TextDecoration.underline,
-      decorationColor: ColorConsts.instance.third,
-    );
-  }
-
   TextStyle get regularThird14 {
     return GoogleFonts.montserrat(
       fontSize: 14,
       color: ColorConsts.instance.third,
       fontWeight: FontWeight.normal,
+    );
+  }
+
+  TextStyle get regularThird12Underlined {
+    return GoogleFonts.montserrat(
+      fontSize: 12,
+      color: ColorConsts.instance.third,
+      fontWeight: FontWeight.normal,
+      decoration: TextDecoration.underline,
+      decorationColor: ColorConsts.instance.third,
     );
   }
 
