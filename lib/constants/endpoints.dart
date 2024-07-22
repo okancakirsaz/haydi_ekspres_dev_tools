@@ -22,6 +22,7 @@ final class Endpoints {
 
   //Advertisement
   final String getBoost = "/advertisement/get-new-advertisement";
+  final String activeBoosts = "/advertisement/get-restaurant-ads";
 
   //Flow
   final String getAdvertedMenus = "/flow/adverted-menu";
