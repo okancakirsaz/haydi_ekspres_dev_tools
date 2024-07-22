@@ -1,6 +1,7 @@
 class BoostRestaurantOrMenuModel {
   String expireDate;
   String elementId;
+  String? menuName;
   bool isRestaurant;
   String restaurantId;
   String boostArea;
@@ -9,6 +10,7 @@ class BoostRestaurantOrMenuModel {
     required this.expireDate,
     required this.elementId,
     required this.isRestaurant,
+    this.menuName,
     required this.restaurantId,
     required this.boostArea,
   });
@@ -19,6 +21,7 @@ class BoostRestaurantOrMenuModel {
       'elementId': elementId,
       'isRestaurant': isRestaurant,
       'restaurantId': restaurantId,
+      'menuName': menuName,
       'boostArea': boostArea,
     };
   }
@@ -29,6 +32,7 @@ class BoostRestaurantOrMenuModel {
       elementId: json['elementId'] as String,
       isRestaurant: json['isRestaurant'] as bool,
       restaurantId: json['restaurantId'] as String,
+      menuName: json['menuName'] as String?,
       boostArea: json['boostArea'] as String,
     );
   }
