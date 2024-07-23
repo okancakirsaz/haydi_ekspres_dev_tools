@@ -20,6 +20,7 @@ final class Endpoints {
   final String addDiscount = "/menu/add-discount";
   final String deleteMenu = "/menu/delete-menu";
   final String writeComment = "/menu/new-comment";
+  final String isMenuAvailable = "/menu/is-menu-available";
 
   //Advertisement
   final String getBoost = "/advertisement/get-new-advertisement";
