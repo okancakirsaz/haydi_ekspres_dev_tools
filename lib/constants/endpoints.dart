@@ -21,6 +21,7 @@ final class Endpoints {
   final String deleteMenu = "/menu/delete-menu";
   final String writeComment = "/menu/new-comment";
   final String isMenuAvailable = "/menu/is-menu-available";
+  final String getMenu = "/restaurant/get-menu";
 
   //Advertisement
   final String getBoost = "/advertisement/get-new-advertisement";
@@ -59,6 +60,7 @@ final class Endpoints {
 
   //Restaurant
   final String getRestaurantComments = "/restaurant/get-comments";
+  final String getRestaurant = "/restaurant/get-restaurant";
 
   //Chat
   final String createChatRoom = "/chat/create-room";
