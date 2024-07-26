@@ -12,6 +12,7 @@ class AddressModel {
   double? long;
   bool isVerifiedFromCourier;
   String? courierAddressDirection;
+  String? verifierCourierId;
   String uid;
   String addressOwner;
 
@@ -27,6 +28,7 @@ class AddressModel {
     required this.addressDirection,
     this.lat,
     this.long,
+    this.verifierCourierId,
     required this.isVerifiedFromCourier,
     this.courierAddressDirection,
     required this.uid,
@@ -47,6 +49,7 @@ class AddressModel {
       'lat': lat,
       'long': long,
       'isVerifiedFromCourier': isVerifiedFromCourier,
+      'verifierCourierId': verifierCourierId,
       'courierAddressDirection': courierAddressDirection,
       'uid': uid,
       'addressOwner': addressOwner,
@@ -68,6 +71,7 @@ class AddressModel {
       long: json['long'] as double?,
       isVerifiedFromCourier: json['isVerifiedFromCourier'] as bool,
       courierAddressDirection: json['courierAddressDirection'] as String?,
+      verifierCourierId: json['verifierCourierId'] as String?,
       uid: json['uid'] as String,
       addressOwner: json['addressOwner'] as String,
     );

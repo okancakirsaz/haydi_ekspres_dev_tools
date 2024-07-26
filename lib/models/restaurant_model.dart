@@ -1,3 +1,5 @@
+import 'package:haydi_ekspres_dev_tools/models/address_model.dart';
+
 class RestaurantModel {
   String ownerName;
   String ownerSurname;
@@ -7,7 +9,7 @@ class RestaurantModel {
   String password;
   String taxNumber;
   bool isMailVerified;
-  String address;
+  AddressModel address;
   bool wantDeliveryFromUs;
   String ibanNumber;
   String bankName;
@@ -57,7 +59,7 @@ class RestaurantModel {
       'password': password,
       'taxNumber': taxNumber,
       'isMailVerified': isMailVerified,
-      'address': address,
+      'address': address.toJson(),
       'wantDeliveryFromUs': wantDeliveryFromUs,
       'ibanNumber': ibanNumber,
       'bankName': bankName,
@@ -85,7 +87,7 @@ class RestaurantModel {
       password: json['password'] as String,
       taxNumber: json['taxNumber'] as String,
       isMailVerified: json['isMailVerified'] as bool,
-      address: json['address'] as String,
+      address: AddressModel.fromJson(json['address']),
       wantDeliveryFromUs: json['wantDeliveryFromUs'] as bool,
       ibanNumber: json['ibanNumber'] as String,
       bankName: json['bankName'] as String,

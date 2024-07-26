@@ -11,10 +11,13 @@ class OrderModel {
   String orderCreationDate;
   String customerName;
   String customerId;
+  String? deliveryDate;
+  double? distance;
   String restaurantId;
   String restaurantName;
   String customerPhoneNumber;
   String? note;
+  bool? isCancelledFromCourier;
   bool? isPaidSuccess;
   String? courierId;
   String orderId;
@@ -28,9 +31,12 @@ class OrderModel {
     required this.orderState,
     required this.orderCreationDate,
     required this.customerName,
+    this.deliveryDate,
+    this.distance,
     required this.customerId,
     required this.restaurantId,
     required this.restaurantName,
+    this.isCancelledFromCourier,
     required this.customerPhoneNumber,
     required this.note,
     this.courierId,
@@ -44,11 +50,14 @@ class OrderModel {
       'addressData': addressData.toJson(),
       'paymentMethod': paymentMethod,
       'orderState': orderState,
+      'deliveryDate': deliveryDate,
+      'distance': distance,
       'orderCreationDate': orderCreationDate,
       'customerName': customerName,
       'customerId': customerId,
       'restaurantId': restaurantId,
       'restaurantName': restaurantName,
+      'isCancelledFromCourier': isCancelledFromCourier,
       'customerPhoneNumber': customerPhoneNumber,
       'note': note,
       'isPaidSuccess': isPaidSuccess,
@@ -69,8 +78,11 @@ class OrderModel {
       orderCreationDate: json['orderCreationDate'] as String,
       customerName: json['customerName'] as String,
       customerId: json['customerId'] as String,
+      deliveryDate: json['deliveryDate'] as String?,
+      distance: json['distance'] as double?,
       restaurantId: json['restaurantId'] as String,
       restaurantName: json['restaurantName'] as String,
+      isCancelledFromCourier: json['isCancelledFromCourier'] as bool?,
       customerPhoneNumber: json['customerPhoneNumber'] as String,
       note: json['note'] as String?,
       isPaidSuccess: json['isPaidSuccess'] as bool?,
