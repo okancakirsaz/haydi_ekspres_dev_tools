@@ -8,6 +8,7 @@ class CustomTextField extends StatefulWidget {
   final TextEditingController controller;
   final TextStyle? style;
   final String hint;
+  final String? label;
   final TextStyle? hintStyle;
   final bool? isReadOnly;
   final int? maxLength;
@@ -29,6 +30,7 @@ class CustomTextField extends StatefulWidget {
     this.keyboardType,
     this.maxLine,
     this.height,
+    this.label,
   });
 
   @override
@@ -70,12 +72,13 @@ class _CustomTextFieldState extends State<CustomTextField> {
               inputFormatters: widget.customInputFormatters,
               cursorColor: Colors.black,
               style: widget.style ?? TextConsts.instance.regularBlack18,
-              decoration: const InputDecoration(
-                counter: SizedBox(),
-                contentPadding: EdgeInsets.only(bottom: 5, left: 10),
+              decoration: InputDecoration(
+                counter: const SizedBox(),
+                contentPadding: const EdgeInsets.only(bottom: 5, left: 10),
                 enabledBorder: InputBorder.none,
                 border: InputBorder.none,
                 focusedBorder: InputBorder.none,
+                hintText: widget.label,
               ),
               controller: widget.controller,
             ),
