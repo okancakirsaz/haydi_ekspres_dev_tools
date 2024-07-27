@@ -1,4 +1,6 @@
 import 'package:haydi_ekspres_dev_tools/models/address_model.dart';
+import 'package:haydi_ekspres_dev_tools/models/models_index.dart';
+import 'package:haydi_ekspres_dev_tools/models/work_hours_model.dart';
 
 class RestaurantModel {
   String ownerName;
@@ -7,6 +9,7 @@ class RestaurantModel {
   String businessName;
   String email;
   String password;
+  WorkHoursModel workHours;
   String taxNumber;
   bool isMailVerified;
   AddressModel address;
@@ -14,10 +17,7 @@ class RestaurantModel {
   String ibanNumber;
   String bankName;
   String bankAccountOwner;
-  String cardNumber;
-  String cardOwner;
-  String cardCvv;
-  String cardExpirationDate;
+  CardModel payment;
   String accountCreationDate;
   bool isPoliciesAccepted;
   String uid;
@@ -26,6 +26,7 @@ class RestaurantModel {
 
   RestaurantModel({
     required this.ownerName,
+    required this.payment,
     required this.ownerSurname,
     required this.phoneNumber,
     required this.businessName,
@@ -35,14 +36,11 @@ class RestaurantModel {
     required this.taxNumber,
     required this.isMailVerified,
     required this.address,
+    required this.workHours,
     required this.wantDeliveryFromUs,
     required this.ibanNumber,
     required this.bankName,
     required this.bankAccountOwner,
-    required this.cardNumber,
-    required this.cardOwner,
-    required this.cardCvv,
-    required this.cardExpirationDate,
     required this.isPoliciesAccepted,
     required this.uid,
     this.nextPaymentDate,
@@ -61,14 +59,12 @@ class RestaurantModel {
       'isMailVerified': isMailVerified,
       'address': address.toJson(),
       'wantDeliveryFromUs': wantDeliveryFromUs,
+      'workHours': workHours.toJson(),
       'ibanNumber': ibanNumber,
       'bankName': bankName,
       'bankAccountOwner': bankAccountOwner,
-      'cardNumber': cardNumber,
-      'cardOwner': cardOwner,
-      'cardCvv': cardCvv,
+      'payment': payment.toJson(),
       'accountCreationDate': accountCreationDate,
-      'cardExpirationDate': cardExpirationDate,
       'isPoliciesAccepted': isPoliciesAccepted,
       'uid': uid,
       'nextPaymentDate': nextPaymentDate,
@@ -84,6 +80,7 @@ class RestaurantModel {
       phoneNumber: json['phoneNumber'] as String,
       businessName: json['businessName'] as String,
       email: json['email'] as String,
+      workHours: WorkHoursModel.fromJson(json['workHours']),
       password: json['password'] as String,
       taxNumber: json['taxNumber'] as String,
       isMailVerified: json['isMailVerified'] as bool,
@@ -92,10 +89,7 @@ class RestaurantModel {
       ibanNumber: json['ibanNumber'] as String,
       bankName: json['bankName'] as String,
       bankAccountOwner: json['bankAccountOwner'] as String,
-      cardNumber: json['cardNumber'] as String,
-      cardOwner: json['cardOwner'] as String,
-      cardCvv: json['cardCvv'] as String,
-      cardExpirationDate: json['cardExpirationDate'] as String,
+      payment: CardModel.fromJson(json['payment']),
       isPoliciesAccepted: json['isPoliciesAccepted'] as bool,
       uid: json['uid'] as String,
       nextPaymentDate: json['nextPaymentDate'] as String?,
@@ -121,10 +115,6 @@ class RestaurantModel {
           ibanNumber == other.ibanNumber &&
           bankName == other.bankName &&
           bankAccountOwner == other.bankAccountOwner &&
-          cardNumber == other.cardNumber &&
-          cardOwner == other.cardOwner &&
-          cardCvv == other.cardCvv &&
-          cardExpirationDate == other.cardExpirationDate &&
           isPoliciesAccepted == other.isPoliciesAccepted &&
           uid == other.uid;
 }
