@@ -49,7 +49,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
         children: <Widget>[
           Text(
             widget.hint,
-            style: widget.hintStyle ?? TextConsts.instance.regularWhite22,
+            style: widget.hintStyle ?? TextConsts.instance.regularWhite18,
           ),
           Container(
             height: widget.height ?? 50,
@@ -79,6 +79,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
                 border: InputBorder.none,
                 focusedBorder: InputBorder.none,
                 hintText: widget.label,
+                hintStyle: TextConsts.instance.regularBlack14,
               ),
               controller: widget.controller,
             ),
