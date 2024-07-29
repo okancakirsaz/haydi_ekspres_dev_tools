@@ -60,7 +60,11 @@ final class Endpoints {
 
   //Restaurant
   final String getRestaurant = "/restaurant/get-restaurant";
+  final String getRestaurantAllData = "/restaurant/get-restaurant-all-data";
+  final String getRestaurantOldBillings =
+      "/restaurant/get-restaurant-old-billings";
   final String getRestaurantWorkHours = "/restaurant/get-restaurant-work-hours";
+  final String setRestaurantWorkHours = "/restaurant/set-work-hours";
 
   //Chat
   final String createChatRoom = "/chat/create-room";

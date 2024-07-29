@@ -22,6 +22,8 @@ class RestaurantModel {
   bool isPoliciesAccepted;
   String uid;
   String? nextPaymentDate;
+  String? lastPaymentDate;
+  num bills;
   bool isAccountBanned;
 
   RestaurantModel({
@@ -43,7 +45,9 @@ class RestaurantModel {
     required this.bankAccountOwner,
     required this.isPoliciesAccepted,
     required this.uid,
+    required this.bills,
     this.nextPaymentDate,
+    this.lastPaymentDate,
     required this.isAccountBanned,
   });
 
@@ -68,6 +72,8 @@ class RestaurantModel {
       'isPoliciesAccepted': isPoliciesAccepted,
       'uid': uid,
       'nextPaymentDate': nextPaymentDate,
+      'lastPaymentDate': lastPaymentDate,
+      'bills': bills,
       'isAccountBanned': isAccountBanned,
     };
   }
@@ -92,7 +98,9 @@ class RestaurantModel {
       payment: CardModel.fromJson(json['payment']),
       isPoliciesAccepted: json['isPoliciesAccepted'] as bool,
       uid: json['uid'] as String,
+      bills: json['bills'] as num,
       nextPaymentDate: json['nextPaymentDate'] as String?,
+      lastPaymentDate: json['lastPaymentDate'] as String?,
       isAccountBanned: json['isAccountBanned'] as bool,
     );
   }
