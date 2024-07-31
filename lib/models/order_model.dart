@@ -17,6 +17,7 @@ class OrderModel {
   String restaurantName;
   String customerPhoneNumber;
   String? note;
+  bool isDeliveringWithCourierService;
   bool? isCancelledFromCourier;
   bool? isPaidSuccess;
   String? courierId;
@@ -32,6 +33,7 @@ class OrderModel {
     required this.orderCreationDate,
     required this.customerName,
     this.deliveryDate,
+    required this.isDeliveringWithCourierService,
     this.distance,
     required this.customerId,
     required this.restaurantId,
@@ -52,6 +54,7 @@ class OrderModel {
       'orderState': orderState,
       'deliveryDate': deliveryDate,
       'distance': distance,
+      'isDeliveringWithCourierService': isDeliveringWithCourierService,
       'orderCreationDate': orderCreationDate,
       'customerName': customerName,
       'customerId': customerId,
@@ -79,6 +82,8 @@ class OrderModel {
       customerName: json['customerName'] as String,
       customerId: json['customerId'] as String,
       deliveryDate: json['deliveryDate'] as String?,
+      isDeliveringWithCourierService:
+          json['isDeliveringWithCourierService'] as bool,
       distance: json['distance'] as double?,
       restaurantId: json['restaurantId'] as String,
       restaurantName: json['restaurantName'] as String,

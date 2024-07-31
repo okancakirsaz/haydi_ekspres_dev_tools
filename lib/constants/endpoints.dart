@@ -4,6 +4,7 @@ final class Endpoints {
   //Auth
   final String logInCustomer = "/auth/log-in-customer";
   final String logInRestaurant = "/auth/log-in-restaurant";
+  final String logInHub = "/auth/log-in-hub";
   final String forgotPasswordCustomer = "/auth/forgot-password-customer";
   final String forgotPasswordRestaurant = "/auth/forgot-password-restaurant";
   final String mailVerificationRequest = "/auth/mail-verification-request";
@@ -48,6 +49,7 @@ final class Endpoints {
   final String isRestaurantUsesHe = "/order/is-restaurants-uses-he";
   final String createOrder = "/order/create-order";
   final String getActiveOrdersRestaurant = "/order/restaurant-active-orders";
+  final String getActiveOrdersHub = "/order/hub-active-orders";
   final String getOrderLogsRestaurant = "/order/restaurant-order-logs";
   final String getOrderLogsCustomer = "/order/customer-order-logs";
   final String updateOrderState = "/order/update-order-state";
