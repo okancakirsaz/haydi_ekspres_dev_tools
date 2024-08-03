@@ -73,6 +73,8 @@ final class Endpoints {
 
   //Restaurant
   final String getRestaurant = "/restaurant/get-restaurant";
+  final String getRestaurantsUsesCourierService =
+      "/restaurant/get-restaurants-uses-courier-service";
   final String getRestaurantAllData = "/restaurant/get-restaurant-all-data";
   final String getRestaurantOldBillings =
       "/restaurant/get-restaurant-old-billings";
