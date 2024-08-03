@@ -50,8 +50,11 @@ final class Endpoints {
   final String createOrder = "/order/create-order";
   final String getActiveOrdersRestaurant = "/order/restaurant-active-orders";
   final String getActiveOrdersHub = "/order/hub-active-orders";
+  final String getActiveOrdersCourier = "/order/courier-active-orders";
   final String getOrderLogsRestaurant = "/order/restaurant-order-logs";
+  final String getOrderLogsHub = "/order/hub-order-logs";
   final String getOrderLogsCustomer = "/order/customer-order-logs";
+  final String getOrderLogsCourier = "/order/courier-order-logs";
   final String updateOrderState = "/order/update-order-state";
   final String cancelOrder = "/order/cancel-order";
   final String getActiveOrdersCustomer = "/order/customer-active-orders";
@@ -59,6 +62,14 @@ final class Endpoints {
   //Customer
   final String deleteAccount = "/customer/delete-account";
   final String change = "/customer/change";
+
+  //Courier
+  final String getCouriers = "/courier/couriers";
+  final String getCourierOptions = "/courier/get-courier-options";
+  final String setCourierOptions = "/courier/set-courier-options";
+  final String setCourier = "/courier/set-courier";
+  final String deleteCourier = "/courier/delete-courier";
+  final String updateCourierWorkState = "/courier/update-courier-work-state";
 
   //Restaurant
   final String getRestaurant = "/restaurant/get-restaurant";

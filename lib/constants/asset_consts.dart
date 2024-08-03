@@ -36,6 +36,10 @@ class AssetConsts {
       "packages/haydi_ekspres_dev_tools/lib/assets/icons/add_advertisement.svg";
   final String comment =
       "packages/haydi_ekspres_dev_tools/lib/assets/icons/comment.svg";
+  final String edit =
+      "packages/haydi_ekspres_dev_tools/lib/assets/icons/edit.svg";
+  final String stats =
+      "packages/haydi_ekspres_dev_tools/lib/assets/icons/stats.svg";
   final String searchSuggestions =
       "packages/haydi_ekspres_dev_tools/lib/assets/images/search_suggestions.png";
   final String hf1 =

@@ -21,3 +21,5 @@ export './order_model.dart';
 export './menu_stats_model.dart';
 export './menu_model.dart';
 export './mail_verification_request_model.dart';
+export './courier_model.dart';
+export './courier_options_model.dart';
