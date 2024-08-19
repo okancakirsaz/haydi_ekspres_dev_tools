@@ -5,6 +5,7 @@ final class Endpoints {
   final String logInCustomer = "/auth/log-in-customer";
   final String logInRestaurant = "/auth/log-in-restaurant";
   final String logInHub = "/auth/log-in-hub";
+  final String logInCourier = "/auth/log-in-courier";
   final String forgotPasswordCustomer = "/auth/forgot-password-customer";
   final String forgotPasswordRestaurant = "/auth/forgot-password-restaurant";
   final String mailVerificationRequest = "/auth/mail-verification-request";

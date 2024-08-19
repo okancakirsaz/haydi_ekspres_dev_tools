@@ -1,15 +1,18 @@
 class CodeLogInModel {
   String code;
+  String? userId;
   String? accessToken;
 
   CodeLogInModel({
     required this.code,
+    this.userId,
     this.accessToken,
   });
 
   Map<String, dynamic> toJson() {
     return {
       'code': code,
+      'userId': userId,
       'accessToken': accessToken,
     };
   }
@@ -17,6 +20,7 @@ class CodeLogInModel {
   factory CodeLogInModel.fromJson(Map<String, dynamic> json) {
     return CodeLogInModel(
       code: json['code'] as String,
+      userId: json['userId'] as String?,
       accessToken: json['accessToken'] as String?,
     );
   }
