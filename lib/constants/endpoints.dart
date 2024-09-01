@@ -66,6 +66,7 @@ final class Endpoints {
 
   //Courier
   final String getCouriers = "/courier/couriers";
+  final String getCourier = "/courier/get-courier";
   final String getCourierOptions = "/courier/get-courier-options";
   final String setCourierOptions = "/courier/set-courier-options";
   final String setCourier = "/courier/set-courier";
